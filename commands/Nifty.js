@@ -31,6 +31,7 @@ module.exports = {
               )
               .setFooter('From Yahoo Finance');
               message.reply(stkEmbed);
+              console.log('Nifty');
               }
           });      
     }

@@ -31,6 +31,7 @@ client.on('message', message =>{
         .setThumbnail('http://www.vectorico.com/download/social_media/Reddit-Icon.png')
         .setURL('https://www.reddit.com/r/IndianStreetBets')
         message.channel.send(helpEmbed);
+        console.log('reddit');
     }
     else if(command == 'yt'){
         const helpEmbed = new Discord.MessageEmbed()
@@ -40,6 +41,7 @@ client.on('message', message =>{
         .setThumbnail('https://maxcdn.icons8.com/Share/icon/Media_Controls/youtube_play1600.png')
         .setURL('https://www.youtube.com/c/IndianStreetBets')
         message.channel.send(helpEmbed);
+        console.log('yt');
     }
     else if(command == 'insta'){
         const helpEmbed = new Discord.MessageEmbed()
@@ -49,6 +51,7 @@ client.on('message', message =>{
         .setThumbnail('http://pngimg.com/uploads/instagram/instagram_PNG11.png')
         .setURL('https://www.instagram.com/IndianStreetBets')
         message.channel.send(helpEmbed);
+        console.log('insta');
     }
     else if(command == 'tweets'){
         const helpEmbed = new Discord.MessageEmbed()
@@ -58,6 +61,7 @@ client.on('message', message =>{
         .setThumbnail('http://pngimg.com/uploads/twitter/twitter_PNG95259.png')
         .setURL('https://www.twitter.com/ISB_Reddit')
         message.channel.send(helpEmbed);
+        console.log('tweets');
     }
     else if(command == 'onlydd'){
         const helpEmbed = new Discord.MessageEmbed()
@@ -65,8 +69,9 @@ client.on('message', message =>{
         .setTitle('Reddit: DDs Only Mode')
         .setDescription('Link to r/IndianStreetBets & Shows only DDs')
         .setThumbnail('http://www.vectorico.com/download/social_media/Reddit-Icon.png')
-        .setURL('https://www.reddit.com/r/IndianStreetBets/search/?q=flair%3ADD&restrict_sr=1&sort=new')
+        .setURL('https://reddit.com/r/IndianStreetBets/search?q=flair%3Add&restrict_sr=on&sort=new&t=all')
         message.channel.send(helpEmbed);
+        console.log('onlydd');
     }
     else if(command == 'rwiki'){
         const helpEmbed = new Discord.MessageEmbed()
@@ -76,6 +81,7 @@ client.on('message', message =>{
         .setThumbnail('http://www.vectorico.com/download/social_media/Reddit-Icon.png')
         .setURL('https://www.reddit.com/r/IndianStreetBets/wiki/index')
         message.channel.send(helpEmbed);
+        console.log('rwiki');
     }
     else if(command == 'nifty'){
         client.commands.get('nifty').execute(message, args, Discord);
@@ -98,6 +104,12 @@ client.on('message', message =>{
     else if(command == 'clear'){
         client.commands.get('clear').execute(message, args);
     }
+    else if(command == 'kick'){
+        client.commands.get('kick').execute(message, args);
+    }
+    else if(command == 'ban'){
+        client.commands.get('ban').execute(message, args);
+    }
 })
 
-client.login('');
+client.login('ODE2MjIxMjA5MTMzODQyNDMz.YD3zPA.h-BTyN_oqtxh96tyxCsCvJM16jA');

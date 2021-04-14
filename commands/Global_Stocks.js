@@ -30,6 +30,7 @@ module.exports = {
                 { name: 'Percent', value: ChangeP, inline: true }
               )
               message.reply(GstkEmbed);
+              console.log('Global Stock: '+name);
               }
             if(err)
             message.reply('**Error: Enter correct Ticker**');

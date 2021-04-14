@@ -20,5 +20,6 @@ module.exports = {
           { name: 'imdb', value: 'returns Movie or TV information'},
         )
         message.reply(helpEmbed);
+        console.log('Help');
   }
 }
