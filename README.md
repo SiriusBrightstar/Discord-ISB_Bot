@@ -1,3 +1,3 @@
-# Discord-Stock_Bot
+# Discord-ISB_Bot
 
 A bot that can provide Stock data and some moderation tools
